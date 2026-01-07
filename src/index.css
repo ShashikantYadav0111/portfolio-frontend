@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+html,
+body {
+  overflow-x: hidden;
+}
+/* Chrome, Edge, Safari */
+.scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #262626; /* neutral-800 */
+  border-radius: 9999px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(127, 29, 29, 0.3); /* red-900/30 */
+  border-radius: 9999px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(127, 29, 29, 0.5);
+}
+
+/* Firefox */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(127, 29, 29, 0.3) #262626;
+}
