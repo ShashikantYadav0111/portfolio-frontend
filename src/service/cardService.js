@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:5000/api/v1/card";
+const baseUrl = "https://portfolio-backend-8byl.onrender.com/api/v1/card";
 
 export const getCards = async () => {
   try {
