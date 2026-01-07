@@ -52,7 +52,7 @@ const CardDashboard = () => {
         await axios.put(`/api/cards/${editingId}`, form);
         setEditingId(null);
       } else {
-        const res = await axios.post("http://localhost:5000/api/v1/card", form);
+        const res = await axios.post("https://portfolio-backend-8byl.onrender.com/api/v1/card", form);
       }
 
       setForm({ title: "", body: "" });
